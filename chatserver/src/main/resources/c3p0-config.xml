@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!--配置连接池mysql-->
+    <named-config name="mysql">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/chat</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+        <!-- 初始化连接数 -->
+        <property name="initialPoolSize">10</property>
+        <!--最大空闲时间,多少秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+        <property name="maxIdleTime">30</property>
+        <!--连接池中保留的最大连接数。Default: 15 -->
+        <property name="maxPoolSize">100</property>
+        <!-- 最小连接数 -->
+        <property name="minPoolSize">10</property>
+    </named-config>
+
+    <!--配置连接池mysql-->
+    <named-config name="online">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/chat</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+        <!-- 初始化连接数 -->
+        <property name="initialPoolSize">10</property>
+        <!--最大空闲时间,多少秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+        <property name="maxIdleTime">30</property>
+        <!--连接池中保留的最大连接数。Default: 15 -->
+        <property name="maxPoolSize">100</property>
+        <!-- 最小连接数 -->
+        <property name="minPoolSize">10</property>
+    </named-config>
+
+    <!--线下数据库配置-->
+    <named-config name="offline">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/chat</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+        <!-- 初始化连接数 -->
+        <property name="initialPoolSize">10</property>
+        <!--最大空闲时间,多少秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+        <property name="maxIdleTime">30</property>
+        <!--连接池中保留的最大连接数。Default: 15 -->
+        <property name="maxPoolSize">100</property>
+        <!-- 最小连接数 -->
+        <property name="minPoolSize">10</property>
+    </named-config>
+
+</c3p0-config>
